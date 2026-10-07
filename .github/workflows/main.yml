@@ -3,14 +3,14 @@ name: csv file validator
 on:
     push:
         branches:
-            -main
+            - main
 
 jobs:
     validate-file:
         runs-on: ubuntu-latest
 
         steps:
-            - name: checkpot code/download code
+            - name: checkout code / download code
               uses: actions/checkout@v7
               
             - name: run validate employee
